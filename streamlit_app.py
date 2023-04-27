@@ -8,12 +8,13 @@ def foo():
 
 st.set_page_config(layout='wide')
 st.title('Streamlit Tab Test with Custom Colors')
-tab1, tab2, tab3 = st.tabs(["Tab 1", "Tab2", "Tab3"])
+tab1, tab2, tab3 = st.tabs(["First Tab", "Second Tab", "Third Tab"])
 
 with tab1:
 	st.subheader('Widgets')
 	st.button('Click me')
 	st.checkbox('I agree')
+	st.button('Example button - Go ahead and give me a click!')
 
 with tab2:
 	st.radio('Pick one', ['cats', 'dogs'])
